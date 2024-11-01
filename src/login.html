@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Login form</title>
+    <script>
+        let login=()=>{
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            
+            if (username === "suni@gmail.com" && password === "suni@123") {
+                document.getElementById("loginstatus").innerHTML = "Login success";
+            } else {
+                document.getElementById("loginstatus").innerHTML = "Login fail";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form>
+        <label>Username:</label>
+        <input type="text" id="username" required>
+        <br><br>
+        <label>Password:</label>
+        <input type="password" id="password" required>
+        <br><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+    <p id="loginstatus"></p>
+</body>
+</html>
+
+
